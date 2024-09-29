@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS SettimeOut abd ClearTimeOut</title>
+</head>
+<body>
+    <div class="contaoner">
+        This is a container
+    </div>
+    <script>
+        // console.log("This is tutorial 58");
+        // setTimeout --> Allows us to run the function once after the interval of time 
+        // clearTimeout --> Allow to run the function repeately after the interval of time 
+
+        function greet(name,byeText){
+            console.log("Hello Good morning " + name + " " + byeText);
+
+        }
+        timeout =  setTimeout(greet, 5000 , " mohd " , " Take Care");
+        console.log(timeout);
+
+        clearTimeout(timeout);
+      
+        // setTimeout(greet(),12000); --> Wrong as it is calling the function inside setTimeout
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+</head>
+<style>
+    #btn{
+        padding: 10px  14px;
+        background-color: red;
+        border: 2px solid black;
+        color: white;
+        font-weight:bold ;
+    }
+</style>
+<body>
+    <!-- Browser events:
+    click
+    contextmenu
+    mouseover/mouseout 
+    mousedwon/mouseup 
+    mousemove
+
+
+    submit
+    focus
+
+    DOMContentLoaded
+
+    transitionend -->
+
+
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet sint ratione quidem? Sit dicta sapiente eligendi aspernatur, numquam dignissimos delectus cum eius officia perspiciatis tempora esse natus, facilis rem nam, ullam minima sequi aut facere quidem! Vero ullam aspernatur dolores odit quam dignissimos eius quod recusandae veritatis maiores animi fugit iste sint, nobis voluptas pariatur porro ut? Dicta reiciendis quas, temporibus voluptate vel provident accusantium soluta mollitia ipsam vero beatae quaerat facere! Quis, eius? Temporibus nulla iste, aliquam quis aperiam atque harum sit aut nesciunt consequatur adipisci accusantium quod praesentium culpa reprehenderit fugit recusandae eum.</p>
+
+    </div>
+     <button id="btn" onclick="toggleHide()">Show/Hide </button>
+
+     <script>
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover',function run(){
+             alert('mouse inside')
+        });
+
+        para.addEventListener('mouseover',function run(){
+             alert('mouse outside')
+        });
+
+        function toggleHide(){
+          let  btn = document.getElementById('btn');
+          let  para = document.getElementById('para');
+          if(para.style.display != 'none'){
+            para.style.display = 'none';
+          }
+          else{
+            para.style.display = 'block';
+          }
+        
+        }
+     </script>
+
+</body>
+</html>

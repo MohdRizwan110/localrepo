@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>CSS Grid Tutorial</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 300px 100px 100px ; */
+            /* grid-template-columns: 300px auto 100px ; */
+            /* grid-template-columns: 1fr 4fr 2fr ; */
+            grid-template-columns: repeat(3,auto);
+        }
+        .Item{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            background-color: brown;
+            margin: 3px ;
+            padding: 15px 5px ;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="Item">This is Item1</div>
+       <div class="Item">This is Item2</div>
+       <div class="Item">This is Item3</div>
+       <div class="Item">This is Item4</div>
+       <div class="Item">This is Item5</div>
+       <div class="Item">This is Item6</div>
+       <div class="Item">This is Item7</div>
+       <div class="Item">This is Item8</div>
+       <div class="Item">This is Item9</div>
+       <div class="Item">This is Item1</div>
+       <div class="Item">This is Item2</div>
+       <div class="Item">This is Item3</div>
+       <div class="Item">This is Item4</div>
+       <div class="Item">This is Item5</div>
+       <div class="Item">This is Item6</div>
+       <div class="Item">This is Item7</div>
+       <div class="Item">This is Item8</div>
+       <div class="Item">This is Item9</div>
+    </div>
+</body>
+</html>
